@@ -1,3 +1,8 @@
+# Changing the key word to make it work friendly
+- This comes from the package 'thefuck' which is an extremely useful tool but is not work friendly due to the usage of the keyword 'fuck'. This repo simply changes the word used to darn to make it more appropriate to use in work environments where you might be sharing your screen.
+- All credit goes to original creator please check out his official release! 
+
+
 # The darn [![Version][version-badge]][version-link] [![Build Status][travis-badge]][travis-link] [![Windows Build Status][appveyor-badge]][appveyor-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
 *The darn* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
