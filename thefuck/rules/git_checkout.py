@@ -1,9 +1,9 @@
 import re
 import subprocess
-from thefuck import utils
-from thefuck.utils import replace_argument
-from thefuck.specific.git import git_support
-from thefuck.shells import shell
+from thedarn import utils
+from thedarn.utils import replace_argument
+from thedarn.specific.git import git_support
+from thedarn.shells import shell
 
 
 @git_support

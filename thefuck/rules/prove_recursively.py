@@ -1,5 +1,5 @@
 import os
-from thefuck.utils import for_app
+from thedarn.utils import for_app
 
 
 def _is_recursive(part):

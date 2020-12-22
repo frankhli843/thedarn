@@ -1,6 +1,6 @@
-from thefuck.specific.archlinux import archlinux_env
-from thefuck.specific.sudo import sudo_support
-from thefuck.utils import for_app
+from thedarn.specific.archlinux import archlinux_env
+from thedarn.specific.sudo import sudo_support
+from thedarn.utils import for_app
 import re
 
 

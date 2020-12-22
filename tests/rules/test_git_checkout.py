@@ -1,7 +1,7 @@
 import pytest
 from io import BytesIO
-from thefuck.rules.git_checkout import match, get_branches, get_new_command
-from thefuck.types import Command
+from thedarn.rules.git_checkout import match, get_branches, get_new_command
+from thedarn.types import Command
 
 
 def did_not_match(target, did_you_forget=False):

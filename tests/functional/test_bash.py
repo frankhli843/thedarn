@@ -4,11 +4,11 @@ from tests.functional.plots import with_confirmation, without_confirmation, \
     select_command_with_arrows, how_to_configure
 
 
-python_3 = (u'thefuck/python3-bash',
+python_3 = (u'thedarn/python3-bash',
             u'FROM python:3',
             u'sh')
 
-python_2 = (u'thefuck/python2-bash',
+python_2 = (u'thedarn/python2-bash',
             u'FROM python:2',
             u'sh')
 
@@ -17,8 +17,8 @@ init_bashrc = u'''echo '
 export SHELL=/bin/bash
 export PS1="$ "
 echo > $HISTFILE
-eval $(thefuck --alias {})
-echo "instant mode ready: $THEFUCK_INSTANT_MODE"
+eval $(thedarn --alias {})
+echo "instant mode ready: $THEdarn_INSTANT_MODE"
 ' > ~/.bashrc'''
 
 
@@ -64,5 +64,5 @@ def test_without_confirmation(proc, TIMEOUT):
 
 @pytest.mark.functional
 def test_how_to_configure_alias(proc, TIMEOUT):
-    proc.sendline('unset -f fuck')
+    proc.sendline('unset -f darn')
     how_to_configure(proc, TIMEOUT)

@@ -1,6 +1,6 @@
 import pytest
-from thefuck.specific.sudo import sudo_support
-from thefuck.types import Command
+from thedarn.specific.sudo import sudo_support
+from thedarn.types import Command
 
 
 @pytest.mark.parametrize('return_value, command, called, result', [

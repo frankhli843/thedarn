@@ -1,5 +1,5 @@
-from thefuck.shells import shell
-from thefuck.utils import for_app
+from thedarn.shells import shell
+from thedarn.utils import for_app
 
 
 @for_app("cp", "mv")

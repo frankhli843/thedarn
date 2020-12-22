@@ -1,5 +1,5 @@
-from thefuck.utils import replace_argument
-from thefuck.specific.git import git_support
+from thedarn.utils import replace_argument
+from thedarn.specific.git import git_support
 
 hooked_commands = ("am", "commit", "push")
 

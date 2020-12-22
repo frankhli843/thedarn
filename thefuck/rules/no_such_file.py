@@ -1,5 +1,5 @@
 import re
-from thefuck.shells import shell
+from thedarn.shells import shell
 
 
 patterns = (

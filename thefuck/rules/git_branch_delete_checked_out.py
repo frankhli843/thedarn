@@ -1,6 +1,6 @@
-from thefuck.shells import shell
-from thefuck.specific.git import git_support
-from thefuck.utils import replace_argument
+from thedarn.shells import shell
+from thedarn.specific.git import git_support
+from thedarn.utils import replace_argument
 
 
 @git_support

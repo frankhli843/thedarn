@@ -1,6 +1,6 @@
 import re
-from thefuck.specific.apt import apt_available
-from thefuck.utils import for_app
+from thedarn.specific.apt import apt_available
+from thedarn.utils import for_app
 
 enabled_by_default = apt_available
 

@@ -1,7 +1,7 @@
 import pytest
-from thefuck.rules.yarn_help import match, get_new_command
-from thefuck.types import Command
-from thefuck.system import open_command
+from thedarn.rules.yarn_help import match, get_new_command
+from thedarn.types import Command
+from thedarn.system import open_command
 
 
 output_clean = '''

@@ -1,6 +1,6 @@
 import pytest
-from thefuck.rules.hostscli import no_website, get_new_command, match
-from thefuck.types import Command
+from thedarn.rules.hostscli import no_website, get_new_command, match
+from thedarn.types import Command
 
 no_website_long = '''
 {}:

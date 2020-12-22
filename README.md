@@ -1,11 +1,11 @@
-# The Fuck [![Version][version-badge]][version-link] [![Build Status][travis-badge]][travis-link] [![Windows Build Status][appveyor-badge]][appveyor-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
+# The darn [![Version][version-badge]][version-link] [![Build Status][travis-badge]][travis-link] [![Windows Build Status][appveyor-badge]][appveyor-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
-*The Fuck* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
+*The darn* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
 [tweet](https://twitter.com/liamosaur/status/506975850596536320),
 that corrects errors in previous console commands.
 
 
-Is *The Fuck* too slow? [Try the experimental instant mode!](#experimental-instant-mode)
+Is *The darn* too slow? [Try the experimental instant mode!](#experimental-instant-mode)
 
 [![gif with examples][examples-link]][examples-link]
 
@@ -16,7 +16,7 @@ More examples:
 E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
-➜ fuck
+➜ darn
 sudo apt-get install vim [enter/↑/↓/ctrl+c]
 [sudo] password for nvbn:
 Reading package lists... Done
@@ -31,7 +31,7 @@ To push the current branch and set the remote as upstream, use
     git push --set-upstream origin master
 
 
-➜ fuck
+➜ darn
 git push --set-upstream origin master [enter/↑/↓/ctrl+c]
 Counting objects: 9, done.
 ...
@@ -44,7 +44,7 @@ No command 'puthon' found, did you mean:
  Command 'python' from package 'python3' (main)
 zsh: command not found: puthon
 
-➜ fuck
+➜ darn
 python [enter/↑/↓/ctrl+c]
 Python 3.4.2 (default, Oct  8 2014, 13:08:17)
 ...
@@ -57,7 +57,7 @@ git: 'brnch' is not a git command. See 'git --help'.
 Did you mean this?
     branch
 
-➜ fuck
+➜ darn
 git branch [enter/↑/↓/ctrl+c]
 * master
 ```
@@ -69,7 +69,7 @@ git branch [enter/↑/↓/ctrl+c]
 Did you mean this?
          repl
 
-➜ fuck
+➜ darn
 lein repl [enter/↑/↓/ctrl+c]
 nREPL server started on port 54848 on host 127.0.0.1 - nrepl://127.0.0.1:54848
 REPL-y 0.3.1
@@ -84,7 +84,7 @@ If you're not afraid of blindly running corrected commands, the
 E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
-➜ fuck
+➜ darn
 sudo apt-get install vim
 [sudo] password for nvbn:
 Reading package lists... Done
@@ -99,48 +99,48 @@ Reading package lists... Done
 
 ## Installation
 
-On OS X, you can install *The Fuck* via [Homebrew][homebrew] (or via [Linuxbrew][linuxbrew] on Linux):
+On OS X, you can install *The darn* via [Homebrew][homebrew] (or via [Linuxbrew][linuxbrew] on Linux):
 
 ```bash
-brew install thefuck
+brew install thedarn
 ```
 
-On Ubuntu / Mint, install *The Fuck* with the following commands:
+On Ubuntu / Mint, install *The darn* with the following commands:
 ```bash
 sudo apt update
 sudo apt install python3-dev python3-pip python3-setuptools
-sudo pip3 install thefuck
+sudo pip3 install thedarn
 ```
 
-On FreeBSD, install *The Fuck* with the following commands:
+On FreeBSD, install *The darn* with the following commands:
 ```bash
-pkg install thefuck
+pkg install thedarn
 ```
 
-On ChromeOS, install *The Fuck* using [chromebrew](https://github.com/skycocker/chromebrew) with the following command:
+On ChromeOS, install *The darn* using [chromebrew](https://github.com/skycocker/chromebrew) with the following command:
 ```bash
-crew install thefuck
+crew install thedarn
 ```
 
-On other systems, install *The Fuck*  by using `pip`:
+On other systems, install *The darn*  by using `pip`:
 
 ```bash
-pip install thefuck
+pip install thedarn
 ```
 
-[Alternatively, you may use an OS package manager (OS X, Ubuntu, Arch).](https://github.com/nvbn/thefuck/wiki/Installation)
+[Alternatively, you may use an OS package manager (OS X, Ubuntu, Arch).](https://github.com/nvbn/thedarn/wiki/Installation)
 
 <a href='#manual-installation' name='manual-installation'>#</a>
 It is recommended that you place this command in your `.bash_profile`,
 `.bashrc`, `.zshrc` or other startup script:
 
 ```bash
-eval $(thefuck --alias)
+eval $(thedarn --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+eval $(thedarn --alias darn)
 ```
 
-[Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/nvbn/thefuck/wiki/Shell-aliases)
+[Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/nvbn/thedarn/wiki/Shell-aliases)
 
 Changes are only available in a new shell session. To make changes immediately
 available, run `source ~/.bashrc` (or your shell config file like `.zshrc`).
@@ -148,26 +148,26 @@ available, run `source ~/.bashrc` (or your shell config file like `.zshrc`).
 To run fixed commands without confirmation, use the `--yeah` option (or just `-y` for short, or `--hard` if you're especially frustrated):
 
 ```bash
-fuck --yeah
+darn --yeah
 ```
 
 To fix commands recursively until succeeding, use the `-r` option:
 
 ```bash
-fuck -r
+darn -r
 ```
 
 ## Updating
 
 ```bash
-pip3 install thefuck --upgrade
+pip3 install thedarn --upgrade
 ```
 
-**Note: Alias functionality was changed in v1.34 of *The Fuck***
+**Note: Alias functionality was changed in v1.34 of *The darn***
 
 ## How it works
 
-*The Fuck* attempts to match the previous command with a rule. If a match is
+*The darn* attempts to match the previous command with a rule. If a match is
 found, a new command is created using the matched rule and executed. The
 following rules are enabled by default:
 
@@ -332,7 +332,7 @@ The following rules are enabled by default on specific platforms only:
 * `pacman_not_found` &ndash; fixes package name with `pacman`, `yay` or `yaourt`.
 * `yum_invalid_operation` &ndash; fixes invalid `yum` calls, like `yum isntall vim`;
 
-The following commands are bundled with *The Fuck*, but are not enabled by
+The following commands are bundled with *The darn*, but are not enabled by
 default:
 
 * `git_push_force` &ndash; adds `--force-with-lease` to a `git push` (may conflict with `git_push_pull`);
@@ -341,7 +341,7 @@ default:
 ## Creating your own rules
 
 To add your own rule, create a file named `your-rule-name.py`
-in `~/.config/thefuck/rules`. The rule file must contain two functions:
+in `~/.config/thedarn/rules`. The rule file must contain two functions:
 
 ```python
 match(command: Command) -> bool
@@ -360,9 +360,9 @@ Your rule should not change `Command`.
 
 
 **Rules api changed in 3.0:** To access a rule's settings, import it with
- `from thefuck.conf import settings`
+ `from thedarn.conf import settings`
 
-`settings` is a special object assembled from `~/.config/thefuck/settings.py`,
+`settings` is a special object assembled from `~/.config/thedarn/settings.py`,
 and values from env ([see more below](#settings)).
 
 A simple example rule for running a script with `sudo`:
@@ -387,16 +387,16 @@ priority = 1000  # Lower first, default is 1000
 requires_output = True
 ```
 
-[More examples of rules](https://github.com/nvbn/thefuck/tree/master/thefuck/rules),
-[utility functions for rules](https://github.com/nvbn/thefuck/tree/master/thefuck/utils.py),
-[app/os-specific helpers](https://github.com/nvbn/thefuck/tree/master/thefuck/specific/).
+[More examples of rules](https://github.com/nvbn/thedarn/tree/master/thedarn/rules),
+[utility functions for rules](https://github.com/nvbn/thedarn/tree/master/thedarn/utils.py),
+[app/os-specific helpers](https://github.com/nvbn/thedarn/tree/master/thedarn/specific/).
 
 ## Settings
 
-Several *The Fuck* parameters can be changed in the file `$XDG_CONFIG_HOME/thefuck/settings.py`
+Several *The darn* parameters can be changed in the file `$XDG_CONFIG_HOME/thedarn/settings.py`
 (`$XDG_CONFIG_HOME` defaults to `~/.config`):
 
-* `rules` &ndash; list of enabled rules, by default `thefuck.const.DEFAULT_RULES`;
+* `rules` &ndash; list of enabled rules, by default `thedarn.const.DEFAULT_RULES`;
 * `exclude_rules` &ndash; list of disabled rules, by default `[]`;
 * `require_confirmation` &ndash; requires confirmation before running new command, by default `True`;
 * `wait_command` &ndash; max amount of time in seconds for getting previous command output;
@@ -427,42 +427,42 @@ num_close_matches = 5
 
 Or via environment variables:
 
-* `THEFUCK_RULES` &ndash; list of enabled rules, like `DEFAULT_RULES:rm_root` or `sudo:no_command`;
-* `THEFUCK_EXCLUDE_RULES` &ndash; list of disabled rules, like `git_pull:git_push`;
-* `THEFUCK_REQUIRE_CONFIRMATION` &ndash; require confirmation before running new command, `true/false`;
-* `THEFUCK_WAIT_COMMAND` &ndash; max amount of time in seconds for getting previous command output;
-* `THEFUCK_NO_COLORS` &ndash; disable colored output, `true/false`;
-* `THEFUCK_PRIORITY` &ndash; priority of the rules, like `no_command=9999:apt_get=100`,
+* `THEdarn_RULES` &ndash; list of enabled rules, like `DEFAULT_RULES:rm_root` or `sudo:no_command`;
+* `THEdarn_EXCLUDE_RULES` &ndash; list of disabled rules, like `git_pull:git_push`;
+* `THEdarn_REQUIRE_CONFIRMATION` &ndash; require confirmation before running new command, `true/false`;
+* `THEdarn_WAIT_COMMAND` &ndash; max amount of time in seconds for getting previous command output;
+* `THEdarn_NO_COLORS` &ndash; disable colored output, `true/false`;
+* `THEdarn_PRIORITY` &ndash; priority of the rules, like `no_command=9999:apt_get=100`,
 rule with lower `priority` will be matched first;
-* `THEFUCK_DEBUG` &ndash; enables debug output, `true/false`;
-* `THEFUCK_HISTORY_LIMIT` &ndash; how many history commands will be scanned, like `2000`;
-* `THEFUCK_ALTER_HISTORY` &ndash; push fixed command to history `true/false`;
-* `THEFUCK_WAIT_SLOW_COMMAND` &ndash; max amount of time in seconds for getting previous command output if it in `slow_commands` list;
-* `THEFUCK_SLOW_COMMANDS` &ndash; list of slow commands, like `lein:gradle`;
-* `THEFUCK_NUM_CLOSE_MATCHES` &ndash; maximum number of close matches to suggest, like `5`.
+* `THEdarn_DEBUG` &ndash; enables debug output, `true/false`;
+* `THEdarn_HISTORY_LIMIT` &ndash; how many history commands will be scanned, like `2000`;
+* `THEdarn_ALTER_HISTORY` &ndash; push fixed command to history `true/false`;
+* `THEdarn_WAIT_SLOW_COMMAND` &ndash; max amount of time in seconds for getting previous command output if it in `slow_commands` list;
+* `THEdarn_SLOW_COMMANDS` &ndash; list of slow commands, like `lein:gradle`;
+* `THEdarn_NUM_CLOSE_MATCHES` &ndash; maximum number of close matches to suggest, like `5`.
 
 For example:
 
 ```bash
-export THEFUCK_RULES='sudo:no_command'
-export THEFUCK_EXCLUDE_RULES='git_pull:git_push'
-export THEFUCK_REQUIRE_CONFIRMATION='true'
-export THEFUCK_WAIT_COMMAND=10
-export THEFUCK_NO_COLORS='false'
-export THEFUCK_PRIORITY='no_command=9999:apt_get=100'
-export THEFUCK_HISTORY_LIMIT='2000'
-export THEFUCK_NUM_CLOSE_MATCHES='5'
+export THEdarn_RULES='sudo:no_command'
+export THEdarn_EXCLUDE_RULES='git_pull:git_push'
+export THEdarn_REQUIRE_CONFIRMATION='true'
+export THEdarn_WAIT_COMMAND=10
+export THEdarn_NO_COLORS='false'
+export THEdarn_PRIORITY='no_command=9999:apt_get=100'
+export THEdarn_HISTORY_LIMIT='2000'
+export THEdarn_NUM_CLOSE_MATCHES='5'
 ```
 
 ## Third-party packages with rules
 
 If you'd like to make a specific set of non-public rules, but would still like
-to share them with others, create a package named `thefuck_contrib_*` with
+to share them with others, create a package named `thedarn_contrib_*` with
 the following structure:
 
 ```
-thefuck_contrib_foo
-  thefuck_contrib_foo
+thedarn_contrib_foo
+  thedarn_contrib_foo
     rules
       __init__.py
       *third-party rules*
@@ -471,17 +471,17 @@ thefuck_contrib_foo
   setup.py
 ```
 
-*The Fuck* will find rules located in the `rules` module.
+*The darn* will find rules located in the `rules` module.
 
 ## Experimental instant mode
 
-The default behavior of *The Fuck* requires time to re-run previous commands.
-When in instant mode, *The Fuck* saves time by logging output with [script](https://en.wikipedia.org/wiki/Script_(Unix)),
+The default behavior of *The darn* requires time to re-run previous commands.
+When in instant mode, *The darn* saves time by logging output with [script](https://en.wikipedia.org/wiki/Script_(Unix)),
 then reading the log.
 
 [![gif with instant mode][instant-mode-gif-link]][instant-mode-gif-link]
 
-Currently, instant mode only supports Python 3 with bash or zsh. zsh's autocorrect function also needs to be disabled in order for thefuck to work properly.
+Currently, instant mode only supports Python 3 with bash or zsh. zsh's autocorrect function also needs to be disabled in order for thedarn to work properly.
 
 To enable instant mode, add `--enable-experimental-instant-mode`
 to the alias initialization in `.bashrc`, `.bash_profile` or `.zshrc`.
@@ -489,7 +489,7 @@ to the alias initialization in `.bashrc`, `.bash_profile` or `.zshrc`.
 For example:
 
 ```bash
-eval $(thefuck --alias --enable-experimental-instant-mode)
+eval $(thedarn --alias --enable-experimental-instant-mode)
 ```
 
 ## Developing
@@ -500,16 +500,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 Project License can be found [here](LICENSE.md).
 
 
-[version-badge]:   https://img.shields.io/pypi/v/thefuck.svg?label=version
-[version-link]:    https://pypi.python.org/pypi/thefuck/
-[travis-badge]:    https://travis-ci.org/nvbn/thefuck.svg?branch=master
-[travis-link]:     https://travis-ci.org/nvbn/thefuck
+[version-badge]:   https://img.shields.io/pypi/v/thedarn.svg?label=version
+[version-link]:    https://pypi.python.org/pypi/thedarn/
+[travis-badge]:    https://travis-ci.org/nvbn/thedarn.svg?branch=master
+[travis-link]:     https://travis-ci.org/nvbn/thedarn
 [appveyor-badge]:  https://ci.appveyor.com/api/projects/status/1sskj4imj02um0gu/branch/master?svg=true
-[appveyor-link]:   https://ci.appveyor.com/project/nvbn/thefuck
-[coverage-badge]:  https://img.shields.io/coveralls/nvbn/thefuck.svg
-[coverage-link]:   https://coveralls.io/github/nvbn/thefuck
+[appveyor-link]:   https://ci.appveyor.com/project/nvbn/thedarn
+[coverage-badge]:  https://img.shields.io/coveralls/nvbn/thedarn.svg
+[coverage-link]:   https://coveralls.io/github/nvbn/thedarn
 [license-badge]:   https://img.shields.io/badge/license-MIT-007EC7.svg
-[examples-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif
-[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif
+[examples-link]:   https://raw.githubusercontent.com/nvbn/thedarn/master/example.gif
+[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thedarn/master/example_instant_mode.gif
 [homebrew]:        https://brew.sh/
 [linuxbrew]:       https://linuxbrew.sh/

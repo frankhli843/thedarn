@@ -1,6 +1,6 @@
 import pytest
-from thefuck.rules.django_south_merge import match, get_new_command
-from thefuck.types import Command
+from thedarn.rules.django_south_merge import match, get_new_command
+from thedarn.types import Command
 
 
 @pytest.fixture

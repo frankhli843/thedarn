@@ -1,6 +1,6 @@
 import pytest
-from thefuck.types import Command
-from thefuck.rules.git_bisect_usage import match, get_new_command
+from thedarn.types import Command
+from thedarn.rules.git_bisect_usage import match, get_new_command
 
 
 @pytest.fixture

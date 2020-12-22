@@ -1,7 +1,7 @@
 import pytest
-from thefuck.rules.go_unknown_command import match, get_new_command
-from thefuck.types import Command
-from thefuck.utils import which
+from thedarn.rules.go_unknown_command import match, get_new_command
+from thedarn.types import Command
+from thedarn.utils import which
 
 
 @pytest.fixture
